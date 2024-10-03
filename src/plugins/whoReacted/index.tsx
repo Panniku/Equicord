@@ -111,7 +111,7 @@ export default definePlugin({
     name: "WhoReacted",
     description: "Renders the avatars of users who reacted to a message",
     authors: [Devs.Ven, Devs.KannaDev, Devs.newwares],
-    settings: settings,
+
     patches: [
         {
             find: ",reactionRef:",
@@ -150,7 +150,8 @@ export default definePlugin({
     },
     _renderUsers({ message, emoji, type }: RootObject) {
         const forceUpdate = useForceUpdater();
-        React.useLayoutEffect(() => { // bc need to prevent autoscrolling
+        React.useLayoutEffect(() => {
+            // bc need to prevent autoscrolling
             if (Scroll?.scrollCounter > 0) {
                 Scroll.setAutomaticAnchor(null);
             }
