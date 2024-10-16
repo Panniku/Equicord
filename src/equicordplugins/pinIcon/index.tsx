@@ -16,27 +16,25 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-import { Devs } from "@utils/constants";
+import { EquicordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
+import { Icons } from "@webpack/common";
+import { Message } from "discord-types/general";
 
 export default definePlugin({
-    name: "NoticesAPI",
-    description: "Fixes notices being automatically dismissed",
-    authors: [Devs.Ven],
-    required: true,
+    name: "PinIcon",
+    description: "Adds a pin icon to pinned messages",
+    authors: [EquicordDevs.iamme],
     patches: [
         {
-            find: '"NoticeStore"',
-            replacement: [
-                {
-                    match: /(?<=!1;)\i=null;(?=.{0,80}getPremiumSubscription\(\))/g,
-                    replace: "if(Vencord.Api.Notices.currentNotice)return false;$&"
-                },
-                {
-                    match: /(?<=,NOTICE_DISMISS:function\(\i\){)return null!=(\i)/,
-                    replace: "if($1.id==\"EquicordNotice\")return($1=null,Vencord.Api.Notices.nextNotice(),true);$&"
-                }
-            ]
+            find: "Messages.MESSAGE_EDITED,",
+            replacement: {
+                match: /Messages\.MESSAGE_EDITED,(?:[^}]*[}]){3}\)/,
+                replace: "$&,$self.PinnedIcon(arguments[0].message)"
+            }
         }
     ],
+    PinnedIcon({ pinned }: Message) {
+        return pinned ? <Icons.PinIcon size="xs" style={{ marginLeft: "5px" }} /> : null;
+    }
 });
