@@ -10,7 +10,7 @@ You can join our [discord server](https://discord.gg/5Xh2W87egW) for commits, ch
 
 ### Extra included plugins
 <details>
-<summary>147 additional plugins</summary>
+<summary>151 additional plugins</summary>
 
 ### All Platforms
 - AllCallTimers by MaxHerbold & D3SOX
@@ -25,6 +25,7 @@ You can join our [discord server](https://discord.gg/5Xh2W87egW) for commits, ch
 - BetterInvites by iamme
 - BetterQuickReact by Ven & Sqaaakoi
 - BetterUserArea by Samwich
+- BetterPlusReacts by Joona
 - BlockKeywords by catcraft
 - BlockKrsip by D3SOX
 - BypassStatus by Inbestigator & thororen
@@ -43,10 +44,10 @@ You can join our [discord server](https://discord.gg/5Xh2W87egW) for commits, ch
 - DecodeBase64 by ThePirateStoner
 - DeadMembers by Kyuuhachi
 - Demonstration by Samwich
+- DisableAnimations by S€th
 - DisableCameras by Joona
 - DoNotLeak by Perny
 - DontFilterMe by Samwich
-- DoubleCounterBypass by nyx
 - EmojiDumper by Cortex, Samwich, Woosh
 - Encryptcord by Inbestigator
 - EquicordCSS by thororen, Panniku, Dablulite, Coolesding, MiniDiscordThemes, LuckFire, gold_me
@@ -66,8 +67,7 @@ You can join our [discord server](https://discord.gg/5Xh2W87egW) for commits, ch
 - GodMode by Tolgchu
 - GoodPerson by nin0dev & mantikafasi
 - GoogleThat by Samwich
-- Grammar by Samwich
-- GrammarFix by unstream
+- GrammarFix by S€th
 - HideChatButtons by iamme
 - HideMessage by Hanzy
 - HideServers by bepvte
@@ -78,6 +78,7 @@ You can join our [discord server](https://discord.gg/5Xh2W87egW) for commits, ch
 - Identity by Samwich
 - IgnoreTerms by D3SOX
 - ImagePreview by Creations
+- ImgToGif by zyqunix
 - InRole by nin0dev
 - IrcColors by Grzesiek11
 - IRememberYou by zoodogood
@@ -96,7 +97,7 @@ You can join our [discord server](https://discord.gg/5Xh2W87egW) for commits, ch
 - MessageTranslate by Samwich
 - ModalFade by Kyuuhachi
 - MoreStickers by Leko & Arjix
-- MoreThemes by Kyuuhachi
+- NeverPausePreviews by vappstar
 - NewPluginsManager by Sqaaakoi
 - NoAppsAllowed by kvba
 - NoBulletPoints by Samwich
@@ -108,8 +109,10 @@ You can join our [discord server](https://discord.gg/5Xh2W87egW) for commits, ch
 - NotificationTitle by Kyuuhachi
 - OnePingPerDM by ProffDea
 - PinIcon by iamme
+- PolishWording (Grammar) by Samwich
 - PlatformSpoofer by Drag
 - PurgeMessages by bhop & nyx
+- QuestCompleter by HappyEnderman, SerStars, maintained by thororen
 - QuestionMarkReplacement by nyx
 - Quoter by Samwich
 - RemixMe by kvba
@@ -121,6 +124,7 @@ You can join our [discord server](https://discord.gg/5Xh2W87egW) for commits, ch
 - SekaiStickers by MaiKokain
 - ServerSearch by camila314
 - ShowBadgesInChat by Inbestigator & KrystalSkull
+- Signature by KrystalSkull
 - SidebarChat by Joona
 - Slap by Korbo
 - SoundBoardLogger by Moxxie, fres, echo, maintained by thororen
@@ -141,9 +145,10 @@ You can join our [discord server](https://discord.gg/5Xh2W87egW) for commits, ch
 - UserPFP by nexpid & thororen
 - UwUifier by echo
 - VCSupport by thororen
+- VCNarratorCustom by Loukios, ported by example-git
 - VencordRPC by AutumnVN
 - VideoSpeed by Samwich
-- ViewRaw2 by Kyuuhachi
+- ViewRawVariant (ViewRaw2) by Kyuuhachi
 - VoiceChannelLog by Sqaaakoi & maintained by thororen
 - VoiceChatUtilities by D3SOX
 - WebpackTarball by Kyuuhachi
@@ -162,10 +167,10 @@ You can join our [discord server](https://discord.gg/5Xh2W87egW) for commits, ch
 
 ### Discord Desktop Only
 - MediaDownloader by Colorman
-- QuestCompleter by HappyEnderman, SerStars, maintained by thororen
 - StatusWhilePlaying by thororen
 
 ### Equicord Devbuilds Only
+- FurudoSpeak by example-git
 - Shakespearean by vmohammad
 - VoiceJoinMessages by Sqaaakoi & maintained by thororen
 
@@ -183,7 +188,9 @@ MacOS
 
 Linux
 - [CLI](https://github.com/Equicord/Equilotl/releases/latest/download/EquilotlCli-Linux)
-
+```shell
+sh -c "$(curl -sS https://raw.githubusercontent.com/Equicord/Equicord/refs/heads/main/misc/install.sh)"
+```
 
 ## Installing Equicord Devbuild
 

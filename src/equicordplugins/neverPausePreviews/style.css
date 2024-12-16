@@ -1,6 +1,6 @@
-.remixme-warning {
+.platform-warning {
     font-size: 16px !important;
-    background-color: rgb(240 71 71 / 10%) !important;
+    background-color: rgb(240 71 71 / 10%);
     color: rgb(240 71 71) !important;
     border: 1px solid rgb(240 71 71 / 60%) !important;
     border-radius: 5px !important;

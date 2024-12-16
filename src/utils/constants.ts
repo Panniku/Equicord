@@ -272,10 +272,6 @@ export const Devs = /* #__PURE__*/ Object.freeze({
         name: "arHSM",
         id: 841509053422632990n
     },
-    F53: {
-        name: "Cassie (Code)",
-        id: 280411966126948353n
-    },
     AutumnVN: {
         name: "AutumnVN",
         id: 393694671383166998n
@@ -525,7 +521,7 @@ export const Devs = /* #__PURE__*/ Object.freeze({
         id: 721717126523781240n
     },
     nyx: {
-        name: "verticalsync",
+        name: "verticalsync.",
         id: 1207087393929171095n
     },
     nekohaxx: {
@@ -583,6 +579,10 @@ export const Devs = /* #__PURE__*/ Object.freeze({
     SomeAspy: {
         name: "SomeAspy",
         id: 516750892372852754n
+    },
+    jamesbt365: {
+        name: "jamesbt365",
+        id: 158567567487795200n,
     },
 } satisfies Record<string, Dev>);
 
@@ -739,9 +739,9 @@ export const EquicordDevs = Object.freeze({
         name: "Prince527",
         id: 364105797162237952n
     },
-    unstream: {
-        name: "Unstream",
-        id: 1125315673829154837n
+    seth: {
+        name: "S€th",
+        id: 1273447359417942128n
     },
     ThePirateStoner: {
         name: "ThePirateStoner",
@@ -942,7 +942,27 @@ export const EquicordDevs = Object.freeze({
     },
     Z1xus: {
         name: "Z1xus",
-        id: 377450600797044746n,
+        id: 377450600797044746n
+    },
+    Oggetto: {
+        name: "Oggetto",
+        id: 619203349954166804n
+    },
+    zyqunix: {
+        name: "zyqunix",
+        id: 1201415921802170388n
+    },
+    examplegit: {
+        name: "example.user",
+        id: 175411535357673473n
+    },
+    Loukios: {
+        name: "Loukios",
+        id: 211461918127292416n
+    },
+    vappstar: {
+        name: "vappstar",
+        id: 747192967311261748n
     }
 } satisfies Record<string, Dev>);
 
