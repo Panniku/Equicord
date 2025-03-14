@@ -45,15 +45,21 @@ function VencordPopout(onClose: () => void) {
                     {Object.entries(plugin.toolboxActions).map(([text, action]) => {
                         const key = `vc-toolbox-${plugin.name}-${text}`;
 
-                        // For certain plugins :trolleyzoom:
                         if (plugin.name === "Demonstration") {
+                            const [demonstrationToggled, setToggled] = useState(false);
+
                             return (
                                 <Menu.MenuCheckboxItem
                                     id="vc-toolbox-demonstration-toggle"
                                     key={key}
                                     checked={!!demonstrationToggled}
                                     label={text}
-                                    action={() => { action(); setToggled(!demonstrationToggled); }}
+                                    action={
+                                        () => {
+                                            action();
+                                            setToggled(!demonstrationToggled);
+                                        }
+                                    }
                                 />
                             );
                         }
