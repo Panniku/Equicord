@@ -188,6 +188,34 @@ export class StickersStore extends FluxStore {
     getStickersByGuildId(id: string): Sticker[] | undefined;
 }
 
+export class RelationshipStore extends FluxStore {
+    isFriend(userId: string): boolean;
+    isBlockedOrIgnored(userId: string): boolean;
+    isBlockedOrIgnoredForMessage(userId: string): boolean;
+    isBlocked(userId: string): boolean;
+    isBlockedForMessage(userId: string): boolean;
+    isIgnored(userId: string): boolean;
+    isIgnoredForMessage(userId: string): boolean;
+    isUnfilteredPendingIncoming(userId: string): boolean;
+    getPendingCount(): number;
+    getSpamCount(): number;
+    getPendingIgnoredCount(): number;
+    getOutgoingCount(): number;
+    getFriendCount(): number;
+    getRelationshipCount(): number;
+    getMutableRelationships(): Record<number, number>;
+    getVersion(): number;
+    isSpam(userId): boolean;
+    getRelationshipType(userId: string): number;
+    getNickname(userId: string): string;
+    getSince(userId: string): string;
+    getSinces(): Record<number, string>;
+    getFriendIDs(): string[];
+    getBlockedIDs(): string[];
+    getIgnoredIDs(): string[];
+    getBlockedOrIgnoredIDs(): string[];
+}
+
 export interface DraftObject {
     channelId: string;
     timestamp: number;
@@ -244,3 +272,24 @@ export type useStateFromStores = <T>(
     dependencies?: any,
     isEqual?: (old: T, newer: T) => boolean
 ) => T;
+
+export class RelationshipStore extends FluxStore {
+    getFriendIDs(): string[];
+    getIgnoredIDs(): string[];
+    getBlockedIDs(): string[];
+
+    getPendingCount(): number;
+    getRelationshipCount(): number;
+
+    /** Related to friend nicknames. */
+    getNickname(userId: string): string;
+    /** @returns Enum value from constants.RelationshipTypes */
+    getRelationshipType(userId: string): number;
+    isFriend(userId: string): boolean;
+    isBlocked(userId: string): boolean;
+    isIgnored(userId: string): boolean;
+    getSince(userId: string): string;
+
+    /** @returns Format: [userId: Enum value from constants.RelationshipTypes] */
+    getMutableRelationships(): Record<number, number>;
+}
